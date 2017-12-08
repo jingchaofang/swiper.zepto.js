@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>爱读掌阅频道页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="slider.css">
+    <script>
+    (function() {
+        function e() { document.documentElement.style.fontSize = document.documentElement.clientWidth >= 720 ? "30px" : (document.documentElement.clientWidth > 720 ? 720 : document.documentElement.clientWidth) / 18 + "px" }
+        var n = null;
+        window.addEventListener("resize", function() { clearTimeout(n), n = setTimeout(e, 0) }, !1), e(), document.addEventListener("DOMContentLoaded", function() {
+            var e = parseFloat(document.documentElement.style.fontSize),
+                n = parseFloat(window.getComputedStyle(document.documentElement, null).fontSize);
+            if (n / e != 1) {
+                var t = e / (n / e);
+                document.documentElement.style.fontSize = t + "px"
+            }
+        }, !1)
+    })(window);
+    </script>
+</head>
+
+<body>
+    <div class="slider-banner" data-js="slider">
+        <ul class="slider-container">
+            <li class="slider-item" data-url="http://ah2.zhangyue.com/zyfm/app/app.php?ca=Special.Index&id=2059&a0=sy_a_open_c_ZT_6qshmy&p1=3216783213213&p2=999941&p3=16010003&p4=501603&p5=14&p9=0&p21=3&usr=libaisan&rgt=&pk=ch_feature&zyeid=&zysid=">
+                <img class="slider-img swiper-lazy" data-src="1.jpg">
+            </li>
+            <li class="slider-item" data-url="http://ah2.zhangyue.com/zyfm/app/app.php?ca=Special.Index&id=2059&a0=sy_a_open_c_ZT_6qshmy&p1=3216783213213&p2=999941&p3=16010003&p4=501603&p5=14&p9=0&p21=3&usr=libaisan&rgt=&pk=ch_feature&zyeid=&zysid=">
+                <img class="slider-img swiper-lazy" data-src="2.jpg">
+            </li>
+            <li class="slider-item" data-url="http://ah2.zhangyue.com/zyfm/app/app.php?ca=Special.Index&id=2059&a0=sy_a_open_c_ZT_6qshmy&p1=3216783213213&p2=999941&p3=16010003&p4=501603&p5=14&p9=0&p21=3&usr=libaisan&rgt=&pk=ch_feature&zyeid=&zysid=">
+                <img class="slider-img swiper-lazy" data-src="3.jpg">
+            </li>
+            <li class="slider-item" data-url="http://ah2.zhangyue.com/zyfm/app/app.php?ca=Special.Index&id=2059&a0=sy_a_open_c_ZT_6qshmy&p1=3216783213213&p2=999941&p3=16010003&p4=501603&p5=14&p9=0&p21=3&usr=libaisan&rgt=&pk=ch_feature&zyeid=&zysid=">
+                <img class="slider-img swiper-lazy" data-src="4.jpg">
+            </li>
+            <li class="slider-item" data-url="http://ah2.zhangyue.com/zyfm/app/app.php?ca=Special.Index&id=2059&a0=sy_a_open_c_ZT_6qshmy&p1=3216783213213&p2=999941&p3=16010003&p4=501603&p5=14&p9=0&p21=3&usr=libaisan&rgt=&pk=ch_feature&zyeid=&zysid=">
+                <img class="slider-img swiper-lazy" data-src="5.jpg">
+            </li>
+        </ul>
+        <div class="dots"></div>
+    </div>
+    <script src="http://libs.cdnjs.net/zepto/1.2.0/zepto.min.js"></script>
+    <script src="../swiper.zepto.js"></script>
+    <script>
+    $(function() {
+        new Swiper('.slider-banner', {
+            pagination: '.swiper-pagination',
+            containerModifierClass: 'slider-banner-',
+            slideClass: 'slider-item',
+            wrapperClass: 'slider-container', // 设置wrapper的css类名
+            slidesPerView: 'auto',
+            spaceBetween: 2,
+            centeredSlides: true,
+            pagination: '.dots',
+            // 设定分页器指示器（小点）的HTML标签
+            paginationElement: 'div',
+            bulletClass: 'dot', // pagination分页器内元素的类名
+            bulletActiveClass: 'active', // pagination分页器内活动(active)元素的类名
+            autoplay: 5000,
+            autoplayDisableOnInteraction: false,
+            loop: true,
+            preloadImages: false,
+            lazyLoading: true,
+            lazyLoadingInPrevNext: true,
+            breakpoints: {
+                // 当宽度小于等于720
+                720: {
+                    slidesPerView: 1,
+                    spaceBetween: 0
+                }
+            },
+            onTouchStart: function() {
+                try {
+                    zy.enableScreen(false);
+                } catch (e) {}
+            },
+            onTouchEnd: function() {
+                try {
+                    zy.enableScreen(true);
+                } catch (e) {}
+            },
+            onClick: function(s, e) {
+                var sliderUrl = $(e.target).closest(".slider-item").attr('data-url');
+                if (sliderUrl) {
+                    location.href = sliderUrl;
+                }
+            }
+        });
+    });
+    </script>
+</body>
+
+</html>

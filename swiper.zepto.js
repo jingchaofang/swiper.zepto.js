@@ -1230,7 +1230,6 @@
                 var slide = s.slides[i];
                 // centeredSlides设定为true时，活动块会居中，而不是默认状态下的居左。
                 var slideProgress = (offsetCenter + (s.params.centeredSlides ? s.minTranslate() : 0) - slide.swiperSlideOffset) / (slide.swiperSlideSize + s.params.spaceBetween);
-                console.log(slideProgress);
                 // 开启watchSlidesVisibility选项前需要先开启watchSlidesProgress，如果开启了watchSlidesVisibility，
                 // 则会在每个可见slide增加一个classname，默认为'swiper-slide-visible'。
                 // http://www.swiper.com.cn/api/Progress/2015/0308/192.html
@@ -1543,52 +1542,56 @@
         /*=========================
           Resize Handler
           ===========================*/
+        var resizeTid = null;
         s.onResize = function(forceUpdatePagination) {
-            // 回调
-            if (s.params.onBeforeResize) s.params.onBeforeResize(s);
-            //Breakpoints
-            if (s.params.breakpoints) {
-                s.setBreakpoint();
-            }
-
-            // Disable locks on resize
-            var allowSwipeToPrev = s.params.allowSwipeToPrev;
-            var allowSwipeToNext = s.params.allowSwipeToNext;
-            s.params.allowSwipeToPrev = s.params.allowSwipeToNext = true;
-
-            s.updateContainerSize();
-            s.updateSlidesSize();
-            if (s.params.slidesPerView === 'auto' || s.params.freeMode || forceUpdatePagination) s.updatePagination();
-            if (s.params.scrollbar && s.scrollbar) {
-                s.scrollbar.set();
-            }
-
-            var slideChangedBySlideTo = false;
-            if (s.params.freeMode) {
-                var newTranslate = Math.min(Math.max(s.translate, s.maxTranslate()), s.minTranslate());
-                s.setWrapperTranslate(newTranslate);
-                s.updateActiveIndex();
-                s.updateClasses();
-
-                if (s.params.autoHeight) {
-                    s.updateAutoHeight();
+            clearTimeout(resizeTid); // 防止多次执行
+            resizeTid = setTimeout(function() {
+                // 回调
+                if (s.params.onBeforeResize) s.params.onBeforeResize(s);
+                //Breakpoints
+                if (s.params.breakpoints) {
+                    s.setBreakpoint();
                 }
-            } else {
-                s.updateClasses();
-                if ((s.params.slidesPerView === 'auto' || s.params.slidesPerView > 1) && s.isEnd && !s.params.centeredSlides) {
-                    slideChangedBySlideTo = s.slideTo(s.slides.length - 1, 0, false, true);
+
+                // Disable locks on resize
+                var allowSwipeToPrev = s.params.allowSwipeToPrev;
+                var allowSwipeToNext = s.params.allowSwipeToNext;
+                s.params.allowSwipeToPrev = s.params.allowSwipeToNext = true;
+
+                s.updateContainerSize();
+                s.updateSlidesSize();
+                if (s.params.slidesPerView === 'auto' || s.params.freeMode || forceUpdatePagination) s.updatePagination();
+                if (s.params.scrollbar && s.scrollbar) {
+                    s.scrollbar.set();
+                }
+
+                var slideChangedBySlideTo = false;
+                if (s.params.freeMode) {
+                    var newTranslate = Math.min(Math.max(s.translate, s.maxTranslate()), s.minTranslate());
+                    s.setWrapperTranslate(newTranslate);
+                    s.updateActiveIndex();
+                    s.updateClasses();
+
+                    if (s.params.autoHeight) {
+                        s.updateAutoHeight();
+                    }
                 } else {
-                    slideChangedBySlideTo = s.slideTo(s.activeIndex, 0, false, true);
+                    s.updateClasses();
+                    if ((s.params.slidesPerView === 'auto' || s.params.slidesPerView > 1) && s.isEnd && !s.params.centeredSlides) {
+                        slideChangedBySlideTo = s.slideTo(s.slides.length - 1, 0, false, true);
+                    } else {
+                        slideChangedBySlideTo = s.slideTo(s.activeIndex, 0, false, true);
+                    }
                 }
-            }
-            if (s.params.lazyLoading && !slideChangedBySlideTo && s.lazy) {
-                s.lazy.load();
-            }
-            // Return locks after resize
-            s.params.allowSwipeToPrev = allowSwipeToPrev;
-            s.params.allowSwipeToNext = allowSwipeToNext;
-            // 回调
-            if (s.params.onAfterResize) s.params.onAfterResize(s);
+                if (s.params.lazyLoading && !slideChangedBySlideTo && s.lazy) {
+                    s.lazy.load();
+                }
+                // Return locks after resize
+                s.params.allowSwipeToPrev = allowSwipeToPrev;
+                s.params.allowSwipeToNext = allowSwipeToNext;
+                // 回调
+                if (s.params.onAfterResize) s.params.onAfterResize(s);
+            }, 4);
         };
 
         /*=========================
@@ -2931,7 +2934,6 @@
                 if (s.slides.length === 0) return;
 
                 var slide = s.slides.eq(index);
-                console.log(slide);
                 var img = slide.find('.' + s.params.lazyLoadingClass).not('.' + s.params.lazyStatusLoadedClass).not('.' + s.params.lazyStatusLoadingClass);
                 if (slide.hasClass(s.params.lazyLoadingClass) && !slide.hasClass(s.params.lazyStatusLoadedClass) && !slide.hasClass(s.params.lazyStatusLoadingClass)) {
                     img = img.add(slide[0]);

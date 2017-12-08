@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <script>
+    (function() {
+        function e() { document.documentElement.style.fontSize = document.documentElement.clientWidth >= 720 ? "30px" : (document.documentElement.clientWidth > 720 ? 720 : document.documentElement.clientWidth) / 18 + "px" }
+        var n = null;
+        window.addEventListener("resize", function() { clearTimeout(n), n = setTimeout(e, 0) }, !1), e(), document.addEventListener("DOMContentLoaded", function() {
+            var e = parseFloat(document.documentElement.style.fontSize),
+                n = parseFloat(window.getComputedStyle(document.documentElement, null).fontSize);
+            if (n / e != 1) {
+                var t = e / (n / e);
+                document.documentElement.style.fontSize = t + "px"
+            }
+        }, !1)
+    })(window);
+    </script>
+</head>
+
+<body>
+    <!--
+    选项卡导航栏
+    -->
+    <div class="tab-nav flex-all-center">
+        <div class="tab-wrap flex">
+            <div class="tab-item tab-checked flex-all-center">热门</div>
+            <div class="tab-item flex-all-center">关注</div>
+            <div class="tab-progress"></div>
+        </div>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="self-item">
+                    <div class="self-header flex">
+                        <div class="self-avatar">
+                            <img src="http://isure.ugc.corp3g.cn/idc_1/m_4,w_60,h_60,q_100/520eb874/group6/M00/20/62/CmRaIVghtZOEa0--AAAAAFJNnmc054501573.jpg?v=i2K0T0Hj">
+                        </div>
+                        <div class="flex-item flexcol-justify">
+                            <div class="self-name">阿龟同学</div>
+                            <div class="self-status">22分钟之前</div>
+                        </div>
+                        <div class="base-btn-add">+关注</div>
+                    </div>
+                    <div class="self-body">
+                        <div class="self-intro">
+                            <div class="flex-v-center">
+                                <div class="self-title">春暖花开遇见你</div>
+                            </div>
+                            <div class="self-desc">时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blank"></div>
+                <div class="self-item">
+                    <div class="self-header flex">
+                        <div class="self-avatar">
+                            <img src="http://isure.ugc.corp3g.cn/idc_1/m_4,w_60,h_60,q_100/520eb874/group6/M00/20/62/CmRaIVghtZOEa0--AAAAAFJNnmc054501573.jpg?v=i2K0T0Hj">
+                        </div>
+                        <div class="flex-item flexcol-justify">
+                            <div class="self-name">阿龟同学</div>
+                            <div class="self-status">22分钟之前</div>
+                        </div>
+                        <div class="base-btn-add">+关注</div>
+                    </div>
+                    <div class="self-body">
+                        <div class="self-intro">
+                            <div class="flex-v-center">
+                                <div class="self-tag update">更新</div>
+                                <div class="self-title">春暖花开遇见你</div>
+                            </div>
+                            <div class="self-desc">时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blank"></div>
+                <div class="self-item">
+                    <div class="self-header flex">
+                        <div class="self-avatar">
+                            <img src="http://isure.ugc.corp3g.cn/idc_1/m_4,w_60,h_60,q_100/520eb874/group6/M00/20/62/CmRaIVghtZOEa0--AAAAAFJNnmc054501573.jpg?v=i2K0T0Hj">
+                        </div>
+                        <div class="flex-item flexcol-justify">
+                            <div class="self-name">阿龟同学</div>
+                            <div class="self-status">22分钟之前</div>
+                        </div>
+                        <div class="base-btn-add">+关注</div>
+                    </div>
+                    <div class="self-body">
+                        <div class="self-intro">
+                            <div class="flex-v-center">
+                                <div class="self-tag new">新书</div>
+                                <div class="self-title">春暖花开遇见你</div>
+                            </div>
+                            <div class="self-desc">时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blank"></div>
+                <div class="self-item">
+                    <div class="self-header flex">
+                        <div class="self-avatar">
+                            <img src="http://isure.ugc.corp3g.cn/idc_1/m_4,w_60,h_60,q_100/520eb874/group6/M00/20/62/CmRaIVghtZOEa0--AAAAAFJNnmc054501573.jpg?v=i2K0T0Hj">
+                        </div>
+                        <div class="flex-item flexcol-justify">
+                            <div class="self-name">阿龟同学</div>
+                            <div class="self-status">22分钟之前</div>
+                        </div>
+                        <div class="base-btn-add">+关注</div>
+                    </div>
+                    <div class="self-body">
+                        <div class="self-intro">
+                            <div class="flex-v-center">
+                                <div class="self-tag update">更新</div>
+                                <div class="self-title">春暖花开遇见你</div>
+                            </div>
+                            <div class="self-desc">时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blank"></div>
+                <div class="self-item">
+                    <div class="self-header flex">
+                        <div class="self-avatar">
+                            <img src="http://isure.ugc.corp3g.cn/idc_1/m_4,w_60,h_60,q_100/520eb874/group6/M00/20/62/CmRaIVghtZOEa0--AAAAAFJNnmc054501573.jpg?v=i2K0T0Hj">
+                        </div>
+                        <div class="flex-item flexcol-justify">
+                            <div class="self-name">阿龟同学</div>
+                            <div class="self-status">22分钟之前</div>
+                        </div>
+                    </div>
+                    <div class="self-body">
+                        <div class="self-intro">
+                            <div class="flex-v-center">
+                                <div class="self-tag update">更新</div>
+                                <div class="self-title">春暖花开遇见你</div>
+                            </div>
+                            <div class="self-info">更新章节：第三十三章 别道行路难</div>
+                            <div class="self-desc">时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blank"></div>
+                <div class="self-item">
+                    <div class="self-header flex">
+                        <div class="self-avatar">
+                            <img src="http://isure.ugc.corp3g.cn/idc_1/m_4,w_60,h_60,q_100/520eb874/group6/M00/20/62/CmRaIVghtZOEa0--AAAAAFJNnmc054501573.jpg?v=i2K0T0Hj">
+                        </div>
+                        <div class="flex-item flexcol-justify">
+                            <div class="self-name">阿龟同学</div>
+                            <div class="self-status">22分钟之前</div>
+                        </div>
+                    </div>
+                    <div class="self-footer">抱歉此文章已经下架了！</div>
+                </div>
+                <div class="blank"></div>
+                <div class="self-item">
+                    <div class="self-header flex">
+                        <div class="self-avatar">
+                            <img src="http://isure.ugc.corp3g.cn/idc_1/m_4,w_60,h_60,q_100/520eb874/group6/M00/20/62/CmRaIVghtZOEa0--AAAAAFJNnmc054501573.jpg?v=i2K0T0Hj">
+                        </div>
+                        <div class="flex-item flexcol-justify">
+                            <div class="self-name">欣小鱼</div>
+                            <div class="self-status">2017-09-01</div>
+                        </div>
+                    </div>
+                    <div class="self-body">
+                        <div class="self-intro">
+                            <div class="flex-v-center">
+                                <div class="self-tag update">更新</div>
+                                <div class="self-title">春暖花开遇见你</div>
+                            </div>
+                            <div class="self-info">更新章节：第三十三章 别道行路难</div>
+                            <div class="self-desc">时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑</div>
+                        </div>
+                        <div class="self-content">
+                            <div class="flex self-panel">
+                                <div class="flex-item  self-panel-content">
+                                    <div class="self-panel-title">为你读诗赵又廷双语诗歌专辑</div>
+                                    <div class="self-panel-desc">赵又廷</div>
+                                    <div class="self-panel-status">1.7万人听</div>
+                                </div>
+                                <div class="self-panel-album" data-audio="http://dl.stream.qqmusic.qq.com/C400003a0mEj1ljBv5.m4a?vkey=E07F71A85D6468D3F4BF1FB6C21C426BAA01A21E2E2777FF33D" data-status="0">
+                                    <img src="http://book.img.ireader.com/idc_1/m_4,w_270,h_270,q_80/b928485d/group6/M00/A9/9B/CmQUNlm4_P2ERN8_AAAAAOJ2UBs751401507.jpg?v=MLMEEGbT&t=CmQUNlm4_Ps.">
+                                    <div class="self-play flex-all-center">
+                                        <div class="i-play"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blank"></div>
+                <div class="self-item">
+                    <div class="self-header flex">
+                        <div class="self-avatar">
+                            <img src="http://isure.ugc.corp3g.cn/idc_1/m_4,w_60,h_60,q_100/520eb874/group6/M00/20/62/CmRaIVghtZOEa0--AAAAAFJNnmc054501573.jpg?v=i2K0T0Hj">
+                        </div>
+                        <div class="flex-item flexcol-justify">
+                            <div class="self-name">欣小鱼</div>
+                            <div class="self-status">2017-09-01</div>
+                        </div>
+                    </div>
+                    <div class="self-body">
+                        <div class="self-intro">
+                            <div class="flex-v-center">
+                                <div class="self-tag update">更新</div>
+                                <div class="self-title">春暖花开遇见你</div>
+                            </div>
+                            <div class="self-info">更新章节：第三十三章 别道行路难</div>
+                            <div class="self-desc">时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑</div>
+                        </div>
+                        <div class="self-content">
+                            <div class="flex self-panel">
+                                <div class="flex-item self-panel-content">
+                                    <div class="self-panel-title">为你读诗赵又廷双语诗歌专辑</div>
+                                    <div class="self-panel-desc">赵又廷</div>
+                                    <div class="self-panel-status">1.7万人听</div>
+                                </div>
+                                <div class="self-panel-album" data-audio="" data-status="0">
+                                    <img src="http://book.img.ireader.com/idc_1/m_4,w_270,h_270,q_80/b928485d/group6/M00/A9/9B/CmQUNlm4_P2ERN8_AAAAAOJ2UBs751401507.jpg?v=MLMEEGbT&t=CmQUNlm4_Ps.">
+                                    <div class="self-play flex-all-center">
+                                        <div class="i-play"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blank"></div>
+                <div class="self-item">
+                    <div class="self-header flex">
+                        <div class="self-avatar">
+                            <img src="http://isure.ugc.corp3g.cn/idc_1/m_4,w_60,h_60,q_100/520eb874/group6/M00/20/62/CmRaIVghtZOEa0--AAAAAFJNnmc054501573.jpg?v=i2K0T0Hj">
+                        </div>
+                        <div class="flex-item flexcol-justify">
+                            <div class="self-name">欣小鱼</div>
+                            <div class="self-status">2017-09-01</div>
+                        </div>
+                    </div>
+                    <div class="self-body">
+                        <div class="self-intro">
+                            <div class="flex-v-center">
+                                <div class="self-tag update">更新</div>
+                                <div class="self-title">春暖花开遇见你</div>
+                            </div>
+                            <div class="self-info">评分
+                                <span class="self-score">
+                                    <span class="start1"></span>
+                                <span class="start1"></span>
+                                <span class="start2"></span>
+                                <span class="start3"></span>
+                                <span class="start3"></span>
+                                </span>
+                            </div>
+                            <div class="self-desc">时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑</div>
+                        </div>
+                        <div class="self-content">
+                            <div class="flex self-panel">
+                                <div class="flex-item self-panel-content">
+                                    <div class="self-panel-title">为你读诗赵又廷双语诗歌专辑</div>
+                                    <div class="self-panel-desc">赵又廷</div>
+                                    <div class="self-panel-status">1.7万人听</div>
+                                </div>
+                                <div class="self-panel-album" data-audio="http://dl.stream.qqmusic.qq.com/C400000bnB3c18zGG9.m4a?vkey=487AA7CAFB55A4AFF7AFA31AB9616D117D36F4138456866EB453AB64DE78C7B24E8BFD66E3D1D17D6CA2BCA7E2FCE60C997AEBA8F0B5BD35&guid=4373364064&uin=849721664&fromtag=66" data-status="0">
+                                    <img src="http://book.img.ireader.com/idc_1/m_4,w_270,h_270,q_80/b928485d/group6/M00/A9/9B/CmQUNlm4_P2ERN8_AAAAAOJ2UBs751401507.jpg?v=MLMEEGbT&t=CmQUNlm4_Ps.">
+                                    <div class="self-play flex-all-center">
+                                        <div class="i-play"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blank"></div>
+                <div class="self-item">
+                    <div class="self-header flex">
+                        <div class="self-avatar">
+                            <img src="http://isure.ugc.corp3g.cn/idc_1/m_4,w_60,h_60,q_100/520eb874/group6/M00/20/62/CmRaIVghtZOEa0--AAAAAFJNnmc054501573.jpg?v=i2K0T0Hj">
+                        </div>
+                        <div class="flex-item flexcol-justify">
+                            <div class="self-name">欣小鱼</div>
+                            <div class="self-status">2017-09-01</div>
+                        </div>
+                    </div>
+                    <div class="self-body">
+                        <div class="self-intro">
+                            <div class="flex-v-center">
+                                <div class="self-tag update">更新</div>
+                                <div class="self-title">春暖花开遇见你</div>
+                            </div>
+                            <div class="self-info">更新章节：第三十三章 别道行路难</div>
+                            <div class="self-desc">时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑</div>
+                        </div>
+                        <div class="self-content">
+                            <div class="flex self-panel">
+                                <div class="self-panel-cover">
+                                    <img src="http://book.img.ireader.com/idc_1/m_1,w_200,h_266/2dee6b74/group6/M00/79/0D/CmQUOFjYj8OEPUWUAAAAALxIL_Y104530726.jpg?v=I47O9jch">
+                                </div>
+                                <div class="flex-item self-panel-content">
+                                    <div class="self-panel-title">为你读诗赵又廷双语诗歌专辑</div>
+                                    <div class="self-panel-desc">赵又廷</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blank"></div>
+                <div class="self-item">
+                    <div class="self-header flex">
+                        <div class="self-avatar">
+                            <img src="http://isure.ugc.corp3g.cn/idc_1/m_4,w_60,h_60,q_100/520eb874/group6/M00/20/62/CmRaIVghtZOEa0--AAAAAFJNnmc054501573.jpg?v=i2K0T0Hj">
+                        </div>
+                        <div class="flex-item flexcol-justify">
+                            <div class="self-name">欣小鱼</div>
+                            <div class="self-status">2017-09-01</div>
+                        </div>
+                    </div>
+                    <div class="self-body">
+                        <div class="self-intro">
+                            <div class="flex-v-center">
+                                <div class="self-tag update">更新</div>
+                                <div class="self-title">春暖花开遇见你</div>
+                            </div>
+                            <div class="self-info">更新章节：第三十三章 别道行路难</div>
+                            <div class="self-desc">时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑</div>
+                        </div>
+                        <div class="self-content">
+                            <div class="flex self-panel">
+                                <div class="flex-item self-panel-content">
+                                    <div class="self-panel-title">这里是一个书单</div>
+                                    <div class="self-panel-status">共30本书</div>
+                                </div>
+                                <div class="self-panel-cover3">
+                                    <img src="http://book.img.ireader.com/idc_1/m_1,w_200,h_266/f4b3140a/group6/M00/DE/33/CmQUNlkL8kSESzuNAAAAAEoqmJM077203363.jpg?v=1CIoIt67&t=CmQUNlkL8kY.">
+                                    <img src="http://book.img.ireader.com/idc_1/m_1,w_200,h_266/f3378496/group6/M00/20/03/CmQUN1X1eyyEaIWjAAAAAE0B3f8628529813.jpg?v=edO1ySzd">
+                                    <img src="http://book.img.ireader.com/idc_1/m_1,w_200,h_266/f561d877/group6/M00/A2/3A/CmQUNlmjjx6EHlT-AAAAAAnjtDk496825304.jpg?v=LDC-AnmR&t=CmQUNlmjl-k.">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blank"></div>
+                <div class="self-item">
+                    <div class="self-header flex">
+                        <div class="self-avatar">
+                            <img src="http://isure.ugc.corp3g.cn/idc_1/m_4,w_60,h_60,q_100/520eb874/group6/M00/20/62/CmRaIVghtZOEa0--AAAAAFJNnmc054501573.jpg?v=i2K0T0Hj">
+                        </div>
+                        <div class="flex-item flexcol-justify">
+                            <div class="self-name">欣小鱼</div>
+                            <div class="self-status">2017-09-01</div>
+                        </div>
+                    </div>
+                    <div class="self-body">
+                        <div class="self-intro">
+                            <div class="flex-v-center">
+                                <div class="self-tag update">更新</div>
+                                <div class="self-title">春暖花开遇见你</div>
+                            </div>
+                            <div class="self-info">更新章节：第三十三章 别道行路难</div>
+                            <div class="self-desc">时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑</div>
+                        </div>
+                        <div class="self-content">
+                            <div class="self-img-list">
+                                <div class="self-img-item">
+                                    <div class="self-img-wrap">
+                                        <img src="http://book.img.ireader.com/idc_1/m_4,w_270,h_270,q_80/7405a3e7/group6/M00/9F/D9/CmQUN1mWTJuEQXDgAAAAAIKzjHc967236068.jpg?v=42n0LrLW&t=CmQUN1mWTJs.">
+                                    </div>
+                                </div>
+                                <div class="self-img-item">
+                                    <div class="self-img-wrap">
+                                        <img src="http://book.img.ireader.com/idc_1/m_4,w_270,h_270,q_80/1d21c1ff/group6/M00/A4/54/CmQUNlmpJqWEKSZZAAAAAPv9ukM633596012.jpg?v=WpkRGfOU&t=CmQUNlmvy68.">
+                                    </div>
+                                </div>
+                                <div class="self-img-item">
+                                    <div class="self-img-wrap">
+                                        <img src="http://book.img.ireader.com/idc_1/m_4,w_270,h_270,q_80/c1728f65/group6/M00/52/4B/CmQUOVm2cVuETjX-AAAAAAtfYls531708894.jpg?v=9DH4PVyO&t=CmQUOVm2cV0.">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blank"></div>
+                <div class="self-item">
+                    <div class="self-header flex">
+                        <div class="self-avatar">
+                            <img src="http://isure.ugc.corp3g.cn/idc_1/m_4,w_60,h_60,q_100/520eb874/group6/M00/20/62/CmRaIVghtZOEa0--AAAAAFJNnmc054501573.jpg?v=i2K0T0Hj">
+                        </div>
+                        <div class="flex-item flexcol-justify">
+                            <div class="self-name">欣小鱼</div>
+                            <div class="self-status">2017-09-01</div>
+                        </div>
+                    </div>
+                    <div class="self-body">
+                        <div class="self-intro">
+                            <div class="flex-v-center">
+                                <div class="self-tag update">更新</div>
+                                <div class="self-title">春暖花开遇见你</div>
+                            </div>
+                            <div class="self-info">更新章节：第三十三章 别道行路难</div>
+                            <div class="self-desc">时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑甄纯洁因工作机会，结识了身份神秘的阔少风炳辰时间杂志编辑</div>
+                        </div>
+                        <div class="self-content">
+                            <div class="self-img-single">
+                                <img src="http://book.img.ireader.com/idc_1/m_4,w_270,h_270,q_80/7405a3e7/group6/M00/9F/D9/CmQUN1mWTJuEQXDgAAAAAIKzjHc967236068.jpg?v=42n0LrLW&t=CmQUN1mWTJs.">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blank"></div>
+            </div>
+            <!-- 关注 -->
+            <div class="swiper-slide">
+                <div class="empty-con">
+                    <div class="empty-text">暂无记录</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="http://libs.cdnjs.net/zepto/1.2.0/zepto.min.js"></script>
+    <script src="../swiper.zepto.js"></script>
+    <script>
+    $(function() {
+        /**
+         * 页面滑屏
+         */
+        var $tabItem = $(".tab-item");
+        var tabItemW = $tabItem.width();
+        var $tabProgress = $(".tab-progress");
+        var pageSwiper = new Swiper('.swiper-container', {
+            initialSlide: localStorage.getItem('tabindex') || 0,
+            runCallbacksOnInit: false,
+            onInit: function() {
+                tabStatus(localStorage.getItem('tabindex') || 0, false);
+            },
+            onTouchStart: function() {
+                try {
+                    zy.enableScreen(false);
+                } catch (e) {}
+            },
+            onTouchEnd: function() {
+                try {
+                    zy.enableScreen(true);
+                } catch (e) {}
+            },
+            onSlideChangeStart: function() {
+                tabStatus();
+            },
+            onAfterResize: function() {
+                tabStatus(pageSwiper.activeIndex, true);
+            }
+        });
+        // 导航状态改变
+        function tabStatus(index, resize) {
+            index = index || (pageSwiper ? pageSwiper.activeIndex : 0);
+            resize = resize || false;
+            if (!resize) {
+                $tabItem.removeClass('tab-checked').eq(index).addClass('tab-checked');
+                localStorage.setItem('tabindex', index);
+            }
+            $tabProgress.css('transform', 'translate3d(' + (index * tabItemW) + 'px, 0px, 0px)');
+        }
+        // 导航项点击交互
+        $tabItem.on("click", function() {
+            var tabIndex = $(this).index();
+            pageSwiper.slideTo(tabIndex);
+        });
+
+    });
+    </script>
+</body>
+
+</html>
