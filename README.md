@@ -1,6 +1,5 @@
 # swiper.zepto.js
 
-[![Join the chat at https://gitter.im/swiper-zepto-js/Lobby](https://badges.gitter.im/swiper-zepto-js/Lobby.svg)](https://gitter.im/swiper-zepto-js/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 swiper zepto 精简版
 
 ## 示例
@@ -27,3 +26,5 @@ $tabItem.on("click", function() {
     pageSwiper.slideTo(tabIndex);
 });
 ```
+
+[![Join the chat at https://gitter.im/swiper-zepto-js/chat](https://badges.gitter.im/swiper-zepto-js/chat.svg)](https://gitter.im/swiper-zepto-js/chat?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
