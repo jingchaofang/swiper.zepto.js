@@ -3,10 +3,12 @@
 
 const gulp = require('gulp');
 const fs = require('fs');
+// a wrapper around Rollup that returns a stream instead of a Promise
 const rollup = require('rollup-stream');
 const buble = require('rollup-plugin-buble');
 const source = require('vinyl-source-stream');
 const buffer = require('vinyl-buffer');
+// Replace content while bundling
 const replace = require('rollup-plugin-replace');
 const resolve = require('rollup-plugin-node-resolve');
 const header = require('gulp-header');

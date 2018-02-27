@@ -1,3 +1,5 @@
+## devDependencies
+
 ```
 npm install rollup-stream -D
 npm install rollup-plugin-buble -D
@@ -9,6 +11,12 @@ npm install gulp-uglify -D
 npm install gulp-header -D
 npm install gulp-sourcemaps -D
 npm install gulp-rename -D
+npm install gulp-connect -D
+npm install gulp-open -D
+npm install gulp-modify-file -D
+npm install gulp-less -D
+npm install gulp-autoprefixer -D
+npm install gulp-clean-css -D
 ```
 
 ## related
@@ -60,6 +68,18 @@ stream是对buffer对象的高级封装，其操作的底层还是buffer对象�
 [gulp-sourcemaps](https://github.com/gulp-sourcemaps/gulp-sourcemaps)
 
 [gulp-rename](https://github.com/hparra/gulp-rename)
+
+[gulp-connect](https://github.com/AveVlad/gulp-connect)
+
+[gulp-open](https://github.com/stevelacy/gulp-open)
+
+[gulp-modify-file](https://github.com/ifedu/gulp-modify-file)
+
+[gulp-less](https://github.com/stevelacy/gulp-less)
+
+[gulp-autoprefixer](https://github.com/sindresorhus/gulp-autoprefixer)
+
+[gulp-clean-css](https://github.com/scniro/gulp-clean-css)
 
 https://www.gulpjs.com.cn/docs/recipes/
 
