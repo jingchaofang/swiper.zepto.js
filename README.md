@@ -2,6 +2,8 @@
 
 swiper zepto 精简版
 
+As advertising: the author is looking for a good job :)
+
 ## 示例
 
 * slider焦点轮播图，借助breakpoints适配大屏幕设备
